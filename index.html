@@ -1,12 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planets</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="/css/styles.css" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Goldman&family=Roboto:wght@100&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="/js/app.js" defer></script>
+
+	<title>Planets</title>
 </head>
-<body>
-    
+
+<body class="welcome" class="body">
+
+	<div class="nav">
+		<div class="logo">
+			<a href="index.html">
+				<h3>Home</h3>
+			</a>
+		</div>
+
+		<div class="navLinks">
+			<ul>
+				<li><a href="https://solarsystem.nasa.gov/" target="hidden">The Planets</a></li>
+				<li><a href="https://solarsystem.nasa.gov/solar-system/our-solar-system/overview/" target="hidden">
+						Planet Live Tracker</a></li>
+				<li><a href="https://solarsystem.nasa.gov/resources/all/?order=pub_date+desc&per_page=50&page=0&search=&condition_1=1%3Ais_in_resource_list&fs=&fc=&ft=&dp=&category="
+						target="hidden">Resources</a>
+				</li>
+			</ul>
+		</div>
+
+
+		<div class="burgerMenu">
+			<input type="checkbox" id="check">
+			<label for="check" class="checkButton">
+				<i class="fa fa-bars"></i>
+			</label>
+		</div>
+
+	</div>
+
+	<div class="burgerLinks">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="https://solarsystem.nasa.gov/" target="hidden">The Planets</a></li>
+			<li><a href="https://solarsystem.nasa.gov/solar-system/our-solar-system/overview/" target="hidden">
+					Planet Live Tracker</a></li>
+			<li><a href="https://solarsystem.nasa.gov/resources/all/?order=pub_date+desc&per_page=50&page=0&search=&condition_1=1%3Ais_in_resource_list&fs=&fc=&ft=&dp=&category="
+					target="hidden">Resources</a></li>
+		</ul>
+	</div>
+
+
+
+
+
+	<div class="main">
+
+		<div class="title">
+
+			<h1>CHECK YOUR WEIGHT ON OTHER PLANETS</h1>
+			<h3>Would you like to know what your weight would be on other planets, moon, or sun? Fill your weight below
+				to find out.</h3>
+
+		</div>
+
+		<div class="mainBody">
+			<h2>NOTICE:</h2>
+			<ul>
+				<li>Choose the planet of your choice, the Sun, or the Moon from the drop down menu.</li>
+				<li>Fill your weight in the space below in any unit you wish (kg/lbs).</li>
+				<li>Click on the "Calculate" button.</li>
+				<li>Be amazed by the difference in weights. Click the back buttom to come to the main page and choose
+					another planet.</li>
+			</ul>
+		</div>
+
+		<div class="planetsBody">
+			<label for="planets">Choose a planet:</label>
+
+			<select name="planets" class="planets" id="planets">
+				<option value="Mercury">Mercury</option>
+				<option value="Venus">Venus</option>
+				<option value="Earth">Earth</option>
+				<option value="Mars">Mars</option>
+				<option value="Jupiter">Jupiter</option>
+				<option value="Saturn">Saturn</option>
+				<option value="Uranus">Uranus</option>
+				<option value="Neptune">Neptune</option>
+				<option value="Pluto">Pluto</option>
+				<option value="Moon">The Moon</option>
+				<option value="Sun">The Sun</option>
+
+			</select>
+		</div>
+
+		<div class="userInput">
+			<h3>Enter Your Weight :</h3>
+			<form>
+				<input class="weight" id="userWeight" type="number" name="weight" required />
+				<button class="calculate" name="calculate" onclick="myFunction(); return false">Calculate</button>
+			</form>
+		</div>
+
+		<div class="disclaimer">
+			<p>*Information provided on this website is cited from NASA Solar System Exploration. <a
+					href="https://solarsystem.nasa.gov/" target="blank">Click here</a> for more info. </p>
+		</div>
+	</div>
+
+	<script src="/js/script.js"></script>
 </body>
+
 </html>

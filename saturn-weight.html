@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/js/app.js" defer></script>
+    <title>Saturn</title>
+</head>
+
+<body class="saturn">
+
+    <div class="nav">
+        <div class="logo">
+            <a href="index.html">
+                <h3>Home</h3>
+            </a>
+        </div>
+
+        <div class="navLinks">
+            <ul>
+                <li><a href="https://solarsystem.nasa.gov/" target="hidden">The Planets</a></li>
+                <li><a href="https://solarsystem.nasa.gov/solar-system/our-solar-system/overview/" target="hidden">
+                        Planet Live Tracker</a></li>
+                <li><a href="https://solarsystem.nasa.gov/resources/all/?order=pub_date+desc&per_page=50&page=0&search=&condition_1=1%3Ais_in_resource_list&fs=&fc=&ft=&dp=&category="
+                        target="hidden">Resources</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="burgerMenu">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkButton">
+                <i class="fa fa-bars"></i>
+            </label>
+        </div>
+
+    </div>
+
+    <div class="burgerLinks">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="https://solarsystem.nasa.gov/" target="hidden">The Planets</a></li>
+            <li><a href="https://solarsystem.nasa.gov/solar-system/our-solar-system/overview/" target="hidden">
+                    Planet Live Tracker</a></li>
+            <li><a href="https://solarsystem.nasa.gov/resources/all/?order=pub_date+desc&per_page=50&page=0&search=&condition_1=1%3Ais_in_resource_list&fs=&fc=&ft=&dp=&category="
+                    target="hidden">Resources</a></li>
+        </ul>
+    </div>
+
+    <div class="backButton">
+        <a href="index.html"><button>← Back</button></a>
+    </div>
+
+
+    <div class="planetDescription">
+        <div class="planetContainer">
+            <h1>Saturn</h1>
+
+            <h2>Your weight on Saturn is:<br> <span id="output"></span></h2>
+
+            <p>Adorned with a dazzling, complex system of icy rings, Saturn is unique in our solar
+                system.
+                The other giant
+                planets have rings, but none are as spectacular as Saturn's.</p>
+
+            <a href="https://solarsystem.nasa.gov/planets/saturn/overview/" target="hidden">Read More → </a>
+        </div>
+
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
